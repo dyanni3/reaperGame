@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Processing on the Web</title>
+    <script src="{{url_for('static', filename='processing.js')}}"></script>
+
+    <style type="text/css">
+      pre {
+        background-color: #EEE;
+        padding: 15px;
+      }
+      
+      #theCanvas {
+        width: 600px;
+        height: 500px;
+        margin: auto;
+        border: 0px solid black;
+        display: block;
+      }
+    </style>
+    
+    
+  </head>
+  <body>
+    
+
+    <p>Here's a live example (click and hold your mouse to release some colored balls)</p>
+    
+    <canvas id="theCanvas" data-processing-sources="static/gol/gol.pde"></canvas>
+  
+    
+  </body>
+</html>
